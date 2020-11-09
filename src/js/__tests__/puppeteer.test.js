@@ -24,7 +24,7 @@ describe('isValid', () => {
       await input.type('4300000000000777');
       const submit = await form.$('button');
       submit.click();
-      await page.waitForSelector('.active');
+      await page.waitForSelector('.happy.active');
     });
   });
   describe('noValid', () => {
@@ -35,7 +35,7 @@ describe('isValid', () => {
       await input.type('4300007');
       const submit = await form.$('.button');
       submit.click();
-      await page.waitForSelector('.active');
+      await page.waitForSelector('.error.active');
     });
   });
 });
