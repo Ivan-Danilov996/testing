@@ -42,19 +42,6 @@ module.exports = {
           },
         ],
       },
-      {
-        test: /\.(txt|csv)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              mimetype: 'txt',
-              limit: false,
-              esModule: false,
-            },
-          },
-        ],
-      },
     ],
   },
   plugins: [
