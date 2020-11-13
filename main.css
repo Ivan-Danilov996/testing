@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+
+.card-block {
+    display: flex;
+    align-items: baseline;
+}
+
+.card {
+    position: relative;
+    margin: 5px;
+}
+
+.disabled {
+    background-position: 0 -25px;
+    opacity: .3;
+}
+
+.error, .happy {
+    display: none;
+}
+
+.active {
+    display: block;
+}
